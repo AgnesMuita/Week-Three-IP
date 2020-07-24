@@ -5,7 +5,7 @@ html {
     background-image:url('../img/assets/backgrounds/h_img.jpg');
     background-position: relative;
     background-repeat: no-repeat;
-    background-size: 1200px 500px;
+    background-size: 1600px 500px;
     background-position-x: center;
 }
 #logo {
@@ -56,10 +56,25 @@ html {
     font-size: 15px;
     margin-top:0px;
 }
-.card-body img {
+.card img {
     position: relative;
     height:400px;
-    width:1200px;
-    margin-left:0.5rem;
-    margin-right:1rem;
+    max-width: 100%;
+}
+.card-title {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 30%;
+    bottom:60%;
+    right: 45%;
+}
+.card-body {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 40%;
+    bottom: 60%;
+    right: 15%;
+    font-size: 15px;
 }
