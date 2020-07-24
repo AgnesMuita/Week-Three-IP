@@ -53,8 +53,9 @@ html {
 .About-us {
     position: relative;
     text-align: center;
-    font-size: 15px;
     margin-top:0px;
+    font-family: Freehand;
+    font-size: 15px;
 }
 .card img {
     position: relative;
@@ -76,5 +77,6 @@ html {
     top: 40%;
     bottom: 60%;
     right: 15%;
+    font-family: Freehand;
     font-size: 15px;
 }
