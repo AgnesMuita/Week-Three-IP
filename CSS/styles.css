@@ -78,9 +78,9 @@ html {
     margin-left: 5rem;
     height:100px;
 }
-/* .image {
-    display: none
-} */
+.image {
+    display: none;
+} 
 .col-md-4 {
     height: 200%;
 }
@@ -93,7 +93,7 @@ html {
 }
 .card-2 {
     height:300px;
-    padding-top: 20px;
+    padding-top: 2px;
 }
 .card-2 h1 {
     text-align: center;
@@ -104,15 +104,14 @@ html {
     padding-bottom:2px;
     padding-top: 5px;
     position: relative;
+    justify-content: center;
 }
 .col-md-3 img {
     opacity: 1;
     display: block;
-    width: 100%;
     transition: .5s ease;
-    margin: 1px;
     height: 200px;
-    padding: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px; 
     backface-visibility: hidden;
 }
 .middle {
@@ -168,12 +167,6 @@ html {
     min-height: 200px;
     margin-top: 2rem;
 }
-/* ::placeholder {
-    color:white;
-} */
-/* .submit {
-    margin-bottom:1px;
-} */
 .social-media {
     margin-top: 2rem;
     display: block;
