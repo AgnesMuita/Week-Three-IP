@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initialscale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="CSS/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="CSS/styles.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Freehand" rel="stylesheet">
@@ -40,11 +40,13 @@
                 <div class="card">
                     <h1>WHAT WE DO</h1>
                     <div class="row">
-                        <div class="col-md-4" id= "design"><img src="img/assets/services_icons/design_icon.png"><figcaption>DESIGN</figcaption></div>
+                        <div class="col-md-4" id= "design"><img src="img/assets/services_icons/design_icon.png"><figcaption>DESIGN</figcaption>
+                        </div>
+
 
                         <div class="col-md-4" id="development"> 
-                            <span class="clickable"><img src="img/assets/services_icons/dev_icon.png"></span>
-                            <figcaption class="text"><span class="clickable">DEVELOPMENT</span></figcaption>
+                        <span class="tog"><img class= "image" src="img/assets/services_icons/dev_icon.png">
+                        <span class="tog"><figcaption class="text">DEVELOPMENT</figcaption></span>
                         </div>
 
                         <div class="col-md-4" id="product-management"><img src="img/assets/services_icons/product_icon.png"><figcaption>PRODUCT MANAGEMENT</figcaption></div>
@@ -53,30 +55,72 @@
                 <div class="card-2">
                     <h1>PORTFOLIO</h1>
                     <div class ="row-1">
-                        <div class="col-md-3"><img src="img/assets/portfolio/work4.jpg"></div>
-                        <div class="col-md-3"><img src="img/assets/portfolio/work3.jpg"></div>
-                        <div class="col-md-3"><img src="img/assets/portfolio/work2.jpg"></div>
-                        <div class="col-md-3"><img src="img/assets/portfolio/work1.jpg"></div>
+                        <div class="col-md-3">
+                            <img src="img/assets/portfolio/work4.jpg">
+                            <div class="middle">
+                                <div class="text">Blank</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/assets/portfolio/work3.jpg">
+                            <div class="middle">
+                                <div class="text">Ontario</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/assets/portfolio/work2.jpg">
+                            <div class="middle">
+                                <div class="text">Orange</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/assets/portfolio/work1.jpg">
+                            <div class="middle">
+                                <div class="text">Jim Carrey</div>
+                            </div>
+                        </div>
                     </div>
                     <div class ="row-1">
-                       <div class="col-md-3"><img src="img/assets/portfolio/work5.jpg"></div>
-                       <div class="col-md-3"><img src="img/assets/portfolio/work6.jpg"></div>
-                       <div class="col-md-3"><img src="img/assets/portfolio/work7.jpg"></div>
-                       <div class="col-md-3"><img src="img/assets/portfolio/work8.jpg"></div>
+                       <div class="col-md-3">
+                           <img src="img/assets/portfolio/work5.jpg">
+                            <div class="middle">
+                                <div class="text">Have a Good day</div>
+                            </div>
+                        </div>
+                       <div class="col-md-3">
+                           <img src="img/assets/portfolio/work6.jpg">
+                            <div class="middle">
+                                <div class="text">Button</div>
+                            </div>
+                        </div>
+                       <div class="col-md-3">
+                           <img src="img/assets/portfolio/work7.jpg">
+                            <div class="middle">
+                                <div class="text">Burned</div>
+                            </div>
+                        </div>
+                       <div class="col-md-3">
+                           <img src="img/assets/portfolio/work8.jpg">
+                            <div class="middle">
+                                <div class="text">Giraffe Restaurant</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-img">
-                    <form action="/action_page.php" class="container">
+                <div class="bg-img" id="contact_form">
+                    <form name="contact" action="javascript: alert ( 'We have received your message.Thank you for reaching out to us!');" class="container" id="myForm">
                         <h1>CONTACT US</h1>
                         <br>
                         <label for="name"></label>
                         <input type="text" id="name" placeholder="Name...">
-                        <label for= "Email"></label>
+                        <label for= "email"></label>
                         <input type="text" id="email" placeholder="Email...">
+                        <label for= "message"></label>
+                        <input type="text"  id="message" placeholder="Your message here...">
                         <br>
-                        <label for= "Message"></label>
-                        <input type="text"  id="Message" placeholder="Your message here...">
+                        <input type="submit" name="submit" class="button" id="submit_btn" value="Send">
                     </form>
+                    <span></span>
                 </div>
                 <div class="social-media">
                     <img src="img/assets/social_icons/twitter.png">
