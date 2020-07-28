@@ -70,34 +70,32 @@ html {
     font-family: Roboto;
     font-size: 15px;
 }
-.card h1 {
+.what-we-do{
+    font-family: 'Quattrocento', serif;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Gabriela', serif;
+    margin-left: 5rem;
+  }
+.what-we-do .headings{
+    padding-bottom: 38px;
+  }
+.card-what-we-do h1 {
     text-align: center;
     font-family:Istok Web;
 }
 .row {
     margin-left: 5rem;
-    height:100px;
-}
-.image {
-    display: none;
-} 
-.col-md-4 {
-    height: 200%;
-}
-.col-md-4 img {
-    width: 33.33%;
-    height: 40%;
-}
-.col-md-4 figcaption {
-    text-style: bold;
+    height:200px;
 }
 .card-2 {
     height:300px;
-    padding-top: 2px;
+    margin-top: 40px;
 }
 .card-2 h1 {
     text-align: center;
-    text-style: bold;
+    font-style: bold;
+    margin-top: 10px;
 }
 .col-md-3 {
     float: left;
@@ -181,7 +179,7 @@ html {
     margin-top: 1rem;
 }
 .card-footer p {
-    text-style: bold;
+    font-style: bold;
 }
 @media (max-width:1250px) and (min-width: 640px) {
     .container {
