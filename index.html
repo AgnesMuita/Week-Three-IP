@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="CSS/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="CSS/styles.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Freehand" rel="stylesheet">
-        <script src="JS/jquery-3.5.1.js"></script>
-        <script src= "JS/scripts.js"></script>
+        <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"e71bed4d6ae5a7c984dfe28b0","lid":"dbf7e27685","uniqueMethods":true}) })</script>
         <title>Delani Studio Site</title>
     </head>
         <body>
@@ -75,75 +75,59 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-2">
-                    <h1>PORTFOLIO</h1>
-                    <div class ="row-1">
-                        <div class="col-md-3">
-                            <img src="img/assets/portfolio/work4.jpg">
-                            <div class="middle">
-                                <div class="text">Blank</div>
-                            </div>
+                <div class="portfolio">
+                    <h2>PORTFOLIO</h2>
+                    <div class="row" id="portfolio">
+                        <div class="col-md-3" id="work1">
+                            <img src="img/assets/portfolio/work4.jpg" alt="work1" >
+                            <p id="overlay"class="text">Black Studio</p>
                         </div>
-                        <div class="col-md-3">
-                            <img src="img/assets/portfolio/work3.jpg">
-                            <div class="middle">
-                                <div class="text">Ontario</div>
-                            </div>
+                        <div class="col-md-3" id="work2">
+                            <img src="img/assets/portfolio/work3.jpg" alt="work2" id="work2">
+                            <p id="overlay2" class="text">Ontario Security</p>
                         </div>
-                        <div class="col-md-3">
-                            <img src="img/assets/portfolio/work2.jpg">
-                            <div class="middle">
-                                <div class="text">Orange</div>
-                            </div>
+                        <div class="col-md-3" id="work3">
+                            <img src="img/assets/portfolio/work2.jpg" alt="work3">
+                            <p id="overlay3"class="text">Pyramids</p>
                         </div>
-                        <div class="col-md-3">
-                            <img src="img/assets/portfolio/work1.jpg">
-                            <div class="middle">
-                                <div class="text">Jim Carrey</div>
-                            </div>
+                        <div class="col-md-3" id="work4">
+                            <img src="img/assets/portfolio/work1.jpg" alt="work4">
+                            <p id="overlay4" class="text">Jim Carry</p>
                         </div>
                     </div>
-                    <div class ="row-1">
-                       <div class="col-md-3">
-                           <img src="img/assets/portfolio/work5.jpg">
-                            <div class="middle">
-                                <div class="text">Have a Good day</div>
-                            </div>
+                    <div class="row" id="portfolio">
+                        <div class="col-md-3" id="work5">
+                            <img src="img/assets/portfolio/work5.jpg" alt="work1">
+                            <p id="overlay5" class="text">Have A Nice Day</p>
                         </div>
-                       <div class="col-md-3">
-                           <img src="img/assets/portfolio/work6.jpg">
-                            <div class="middle">
-                                <div class="text">Button</div>
-                            </div>
+                        <div class="col-md-3" id="work6">
+                            <img src="img/assets/portfolio/work6.jpg" alt="work2">
+                            <p id="overlay6"class="text">Calculator</p>
                         </div>
-                       <div class="col-md-3">
-                           <img src="img/assets/portfolio/work7.jpg">
-                            <div class="middle">
-                                <div class="text">Burned</div>
-                            </div>
+                        <div class="col-md-3" id="work7">
+                            <img src="img/assets/portfolio/work7.jpg" alt="work3">
+                            <p id="overlay7" class="text">Burned</p>
                         </div>
-                       <div class="col-md-3">
-                           <img src="img/assets/portfolio/work8.jpg">
-                            <div class="middle">
-                                <div class="text">Giraffe Restaurant</div>
-                            </div>
+                        <div class="col-md-3" id="work8">
+                            <img src="img/assets/portfolio/work8.jpg" alt="work4">
+                            <p id="overlay8" class="text">Giraffe Restaurant</p>
                         </div>
                     </div>
-                </div>
-                <div class="bg-img">
-                    <form name="contact" action="javascript: alert ( 'We have received your message.Thank you for reaching out to us!');" method="get" class="container" id="myForm">
-                        <h1>CONTACT US</h1>
-                        <br>
-                        <label for="name"></label>
-                        <input type="text" id="name" placeholder="Name...">
-                        <label for= "email"></label>
-                        <input type="text" id="email" placeholder="Email...">
-                        <label for= "message"></label>
-                        <input type="text"  id="message" placeholder="Your message here...">
-                        <br>
-                        <input type="submit" name="submit" class="button" id="submit_btn" value="Send">
+                </div> 
+                <div class="container-fluid contact">
+                    <h2>CONTACT US</h2>
+                    <form id="Aggieform" action="https://gmail.us3.list-manage.com/subscribe/post" method="POST">
+                            <input type="hidden" name="u" value="e71bed4d6ae5a7c984dfe28b0">
+                            <input type="hidden" name="id" value="dbf7e27685">
+                        <div class="form-group form-inline">
+                            <input type="text" class="form-control" placeholder = "Name...." name="MERGE1" id="MERGE1" size="25" value="">
+                            <input type="email" class="form-control"  placeholder = "Email...." autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="8" id="comment" placeholder = "Your message here...."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-md-1">Submit</button>
                     </form>
-                    <span></span>
                 </div>
                 <div class="social-media">
                     <img src="img/assets/social_icons/twitter.png">
@@ -160,6 +144,9 @@
                     <p>DELANI STUDIO</p>
                     <p>2019</p>
                 </div>
+                <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"e71bed4d6ae5a7c984dfe28b0","lid":"dbf7e27685","uniqueMethods":true}) })</script>
+                <script src="JS/jquery-3.5.1.js"></script>
+                <script src= "JS/scripts.js"></script>
             </div>
         </body>
 </html>
