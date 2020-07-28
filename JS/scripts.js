@@ -82,11 +82,6 @@ $(document).ready(function(){
       $("#overlay8").hide();
     });
 });
-// $("form").submit (function (event){
-//     if ($ ("input:first").val() === "javatpoint") {
-//     $("span").text ("We have received your message. Thank you for reaching out to us").show ();
-//     return;
-// }
 $(document).ready(function(){
     $("form#Aggieform").submit(function(event){
       // event.preventDefault();
