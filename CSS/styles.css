@@ -20,14 +20,11 @@ html {
     height:60px;
 }
 .landing-page h1 {
-    /* position: absolute; */
     padding: 2px;
     margin-top:15px;
     text-align:center;
     color: white;
     font-size: 40px;
-    /* margin-top:0px;
-    margin-bottom:500px; */
 }
 .landing-page p {
     padding: 2px;
@@ -88,54 +85,26 @@ html {
     margin-left: 5rem;
     height:200px;
 }
-.card-2 {
-    height:300px;
-    margin-top: 40px;
+.portfolio {
+    margin-top:0px;
 }
-.card-2 h1 {
+#portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left:18%;
+    margin-right: 16%; 
+}
+.col-md-3 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.portfolio h2{
     text-align: center;
-    font-style: bold;
-    margin-top: 10px;
+    padding-top:40px;
+    font-family: 'Gabriela', serif;
 }
-.col-md-3 {
-    float: left;
-    padding-bottom:2px;
-    padding-top: 5px;
-    position: relative;
-    justify-content: center;
-}
-.col-md-3 img {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    height: 200px;
-    padding: 1px 1px 1px 1px; 
-    backface-visibility: hidden;
-}
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate (-50%,-50%);
-    -ms-transform: translate (-50%, -50%);
-    text-align: center;
-}
-.col-md-3:hover .img {
-    opacity: 0.3;
-}
-.col-md-3:hover .middle {
-    opacity: 1;
-}
-.middle .text {
-    background-color: white;
-    color: black;
-    font-size: 16px;
-    padding: 16px 32px;
-    mix-blend-mode: overlay;
-}
-.bg-img {
+.contact{
     background-image: url("../img/assets/backgrounds/c_image.jpg");
     min-height: 500px; 
     min-width: 1000px;
@@ -143,27 +112,43 @@ html {
     background-repeat: contain,cover;
     background-size: 100% 100%;
 }
-.container {
-    align-items: left;
-    margin-top:15rem;
+.title{
+    padding: 6px;
+}
+.contact h2{
     text-align: center;
-    mix-blend-mode: overlay;
-}
-.container h1 {
-    padding-top: 3rem;
     color: white;
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-family: 'Roboto';
+  }
+input[type=text],input[type=email],#comment{
+    font-family: 'Roboto';
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto';
 }
-#name {
-    min-width: 450px;
+.form-control::-webkit-input-placeholder { 
+    color: white; 
 }
-#email {
-    min-width: 450px;
+#MERGE1{
+    width: 30%;
+    margin-left: 18%;
+    margin-right: 30px;
 }
-#message {
-    align-items: flex-start;
-    min-width: 900px;
-    min-height: 200px;
-    margin-top: 2rem;
+#MERGE0{
+    width: 30%;
+}
+#comment{
+    margin-left: 20%;
+    width: 60%;
+}
+button{
+    margin-left: 20%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
 }
 .social-media {
     margin-top: 2rem;
@@ -181,8 +166,29 @@ html {
 .card-footer p {
     font-style: bold;
 }
-@media (max-width:1250px) and (min-width: 640px) {
-    .container {
-        width: auto;
-    }
+#product, #development, #design{
+    display: none;
+    font-family: 'Copse', serif;
+    font-size: 16px;
 }
+#product .title, #development .title, #design .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+#overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    display: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.456);
+    position:absolute;
+    top: 20px;
+    left: 35px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50%;
+    font-family: 'Delius Swash Caps', cursive;
+}
+
+  
